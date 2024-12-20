@@ -1,4 +1,4 @@
-
+package ADT.Tutorial_2;
 /*  Phutawan Mueangma    
     672115037
     Program for to SE tutorial 2
@@ -9,30 +9,10 @@ import java.util.StringTokenizer;
 import java.util.Vector;
 import java.io.File;
 import java.io.FileNotFoundException;
-
-class Student{
-        private String SID;
-        private String firstName;
-        private String lastName;
-
-    public Student(String SID,String firstName,String lastName){
-        this.SID = SID;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-    public String getfirstName() {
-        return  firstName;
-
-    }
-    public String toString(){
-        return this.SID + " " + this.firstName + " " + this.lastName;
-    }
-    
-}
     
     public class Data{
         public static void main(String[] args) throws FileNotFoundException{
-            File f = new File("ADT/Tutorial 2/class_roaster67.csv"); // your location of .csv
+            File f = new File("C:\\Users\\CAMT-STD\\Desktop\\SE\\ADT\\Tutorial_2\\class_roaster67.csv"); // your location of .csv
                 Scanner input = new Scanner(f) ;
     
                     for(int i = 0 ; i < 7 ; i++ ){
@@ -69,7 +49,7 @@ class Student{
                                 }
                 }
                                         System.out.println();
-                                        System.out.println(Alphabet + " " + countStudent);
+                                        System.out.println(Alphabet + " : " + countStudent);
 
                                         for(Student i : toString){
                                             System.out.println(i);
